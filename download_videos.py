@@ -1,6 +1,5 @@
 import yt_dlp
 
-# List of YouTube video URLs
 video_urls = [
     "https://www.youtube.com/watch?v=V9YDDpo9LWg",
     "https://www.youtube.com/watch?v=JBoc3w5EKfI",
@@ -24,10 +23,8 @@ video_urls = [
     "https://www.youtube.com/watch?v=1YqVEVbXQ1c",
 ]
 
-# Directory to save downloaded videos
 output_dir = "test_videos"
 
-# Download each video
 ydl_opts = {
     'outtmpl': f'{output_dir}/%(title)s.%(ext)s',
     'format': 'bestvideo+bestaudio/best',
