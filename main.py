@@ -6,7 +6,6 @@ from sort import sort
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # Load YOLOv5 small model
 
-# Initialize the SORT tracker
 tracker = sort()
 
 def detect_and_track(video_path, output_path):
@@ -24,10 +23,8 @@ def detect_and_track(video_path, output_path):
         if not ret:
             break
         
-        # Perform detection
         results = model(frame)
 
-        # Extract bounding boxes and class labels
         det = []
         for *xyxy, conf, cls in results.xyxy[0]:
             if int(cls) == 0:  # Filter for persons only
@@ -35,16 +32,13 @@ def detect_and_track(video_path, output_path):
         
         det = np.array(det)
         
-        # Update the tracker
         tracks = tracker.update(det)
         
-        # Draw bounding boxes with IDs
         for track in tracks:
             x1, y1, x2, y2, track_id = track
             cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
             cv2.putText(frame, f'ID {int(track_id)}', (int(x1), int(y1) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
         
-        # Write the frame to the output video
         out.write(frame)
     
     cap.release()
@@ -56,9 +50,8 @@ def process_multiple_videos(video_paths, output_dir):
         os.makedirs(output_dir)
 
     for video_path in video_paths:
-        # Extract video filename
         video_name = os.path.basename(video_path)
-        output_path = os.path.join(output_dir, f"output_{video_name}")
+        output_path = os.path.join(output_dir, f"output_{track_video_name}")
         
         print(f"Processing {video_name}...")
         detect_and_track(video_path, output_path)
