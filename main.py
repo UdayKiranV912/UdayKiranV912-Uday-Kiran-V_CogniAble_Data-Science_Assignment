@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 from sort import sort
 
-# Load the YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # Load YOLOv5 small model
 
 # Initialize the SORT tracker
