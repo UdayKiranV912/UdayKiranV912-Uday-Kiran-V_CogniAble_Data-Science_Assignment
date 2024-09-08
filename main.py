@@ -68,25 +68,25 @@ def process_multiple_videos(video_paths, output_dir):
 if __name__ == "__main__":
     # List of video paths to process
     video_paths = [
-    "test_videos\ABA Autism Training - Chapter 1 - The Discrete Trial.webm",
-    "test_videos\ABA Therapy - Learning about Animals.mp4",
-    "test_videos\ABA Therapy - Play.webm",
-    "test_videos\ABA Therapy - Social Engagement.mp4",
-    "Ctest_videos\ABA Therapy： Daniel - Communication.webm",
-    "test_videos\Augmentative and Alternative Communication AAC.webm",
-    "test_videos\Autism (Moderate - Severe) and ABA - Training Session.webm",
-    "test_videos\Discrete Trial Training.mp4",
-    "test_videos\Exploring the Therapeutic Playroom.mkv",
-    "test_videos\Group Therapy for Autism Spectrum Disorder.webm",
-    "test_videos\How to Do Play Therapy ： Building a Growth Mindset Role Play.mp4",
-    "test_videos\Incidental Teaching.mkv",
-    "test_videos\Jan 5 SonRise Mom part 1.mkv",
-    "test_videos\MASS TRIAL (Gross motor imitation).mkv",
-    "test_videos\Matching.mkv",
-    "test_videos\Natural Environment Teaching (NET).mkv",
-    "test_videos\Preference Assessment with Toys： Multiple Stimulus without Replacement (MSWO).webm",
-    "est_videos\Sensory Play at Home： Proprioceptive Games.webm",
-    "test_videos\Speech Therapy Training Session- Moderate to Severe Autism.webm"
+    "test_videos/ABA Autism Training - Chapter 1 - The Discrete Trial.webm",
+    "test_videos/ABA Therapy - Learning about Animals.mp4",
+    "test_videos/ABA Therapy - Play.webm",
+    "test_videos/ABA Therapy - Social Engagement.mp4",
+    "Ctest_videos/ABA Therapy： Daniel - Communication.webm",
+    "test_videos/Augmentative and Alternative Communication AAC.webm",
+    "test_videos/Autism (Moderate - Severe) and ABA - Training Session.webm",
+    "test_videos/Discrete Trial Training.mp4",
+    "test_videos/Exploring the Therapeutic Playroom.mkv",
+    "test_videos/Group Therapy for Autism Spectrum Disorder.webm",
+    "test_videos/How to Do Play Therapy ： Building a Growth Mindset Role Play.mp4",
+    "test_videos/Incidental Teaching.mkv",
+    "test_videos/Jan 5 SonRise Mom part 1.mkv",
+    "test_videos/MASS TRIAL (Gross motor imitation).mkv",
+    "test_videos/Matching.mkv",
+    "test_videos/Natural Environment Teaching (NET).mkv",
+    "test_videos/Preference Assessment with Toys： Multiple Stimulus without Replacement (MSWO).webm",
+    "est_videos/Sensory Play at Home： Proprioceptive Games.webm",
+    "test_videos/Speech Therapy Training Session- Moderate to Severe Autism.webm"
     
     ]
     
